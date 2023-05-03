@@ -1,0 +1,33 @@
+{
+    "name": "deviget/configs",
+    "description": "",
+    "require": {
+        "php": "~8.1.0||~8.2.0",
+
+        "magento/magento-composer-installer": "*"
+    },
+    "suggest": {
+
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Deviget\\Configs\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Deviget/Configs"
+            ]
+        ]
+    }
+}
