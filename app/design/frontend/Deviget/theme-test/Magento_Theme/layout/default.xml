@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_width" xsi:type="string">170</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="advanced-search-link" remove="true"/>
+        <referenceBlock name="report.bugs" remove="true"/>
+    </body>
+</layout>
