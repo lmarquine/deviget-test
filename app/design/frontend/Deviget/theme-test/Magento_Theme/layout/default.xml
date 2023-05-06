@@ -8,6 +8,7 @@
             </arguments>
         </referenceBlock>
         <referenceBlock name="advanced-search-link" remove="true"/>
+        <referenceBlock name="currency" remove="true"/>
         <referenceBlock name="report.bugs" remove="true"/>
     </body>
 </layout>
