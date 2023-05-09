@@ -1,0 +1,60 @@
+/**
+ *
+ * @author      Deviget Core Team <contact@deviget.com>
+ * @copyright   2023 Deviget (https://deviget.com)
+ * @license     https://deviget.com Copyright
+ * @link        https://deviget.com
+ *
+ */
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    //
+    //  Product view
+    //  ---------------------------------------------
+
+    .catalog-product-view {
+        .page-wrapper {
+            .page-main-description {
+                margin: 0 auto;
+                max-width: 1280px;
+            }
+        }
+    }
+    .catalog-product-view {
+        .page-wrapper {
+            .product-info-main {
+                .product {
+                    &.attribute {
+                        &.overview {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .catalog-product-view {
+        .page-wrapper {
+            .product {
+                &.attribute {
+                    &.description {
+                        padding: 0 20px;
+                        .product-description,
+                        .product-section-title {
+                            font-size: 2.6rem;
+                            font-weight: @font-weight__light;
+                        }
+                        p {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
