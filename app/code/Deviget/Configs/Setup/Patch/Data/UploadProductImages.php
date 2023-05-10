@@ -67,6 +67,8 @@ class UploadProductImages implements DataPatchInterface
 
             $destinationFilePath = $destinationPath . '/' . basename($localFilePath);
             $this->fileDriver->copy($localFilePath, $destinationFilePath);
+
+            $this->fileDriver->deleteFile($localFilePath);
         }
     }
 

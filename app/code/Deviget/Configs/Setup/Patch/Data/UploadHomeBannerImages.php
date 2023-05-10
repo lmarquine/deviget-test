@@ -54,7 +54,7 @@ class UploadHomeBannerImages implements DataPatchInterface
         // Destination in Pub Media
         $bannerImagesPath = 'sparsh/banner/image/s/l';
 
-        // Upload the file to the WYSIWYG folder
+        // Upload the file to the banner folder
         $mediaPath = $this->directoryList->getPath(DirectoryList::MEDIA);
         $destinationPath = $mediaPath . '/' . $bannerImagesPath;
 
@@ -64,6 +64,8 @@ class UploadHomeBannerImages implements DataPatchInterface
 
         $destinationFilePath = $destinationPath . '/' . basename($localFilePath);
         $this->fileDriver->copy($localFilePath, $destinationFilePath);
+
+        $this->fileDriver->deleteFile($localFilePath);
 
         // Local Image Patch
         $localFilePath = __DIR__ . '/../../media/slider2.png';
@@ -78,6 +80,8 @@ class UploadHomeBannerImages implements DataPatchInterface
 
         $destinationFilePath = $destinationPath . '/' . basename($localFilePath);
         $this->fileDriver->copy($localFilePath, $destinationFilePath);
+
+        $this->fileDriver->deleteFile($localFilePath);
     }
 
     public function getAliases()
